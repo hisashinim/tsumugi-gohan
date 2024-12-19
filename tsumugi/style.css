@@ -1,0 +1,300 @@
+/* PC・スマホ共通 */
+body {
+  max-width: 1080px;
+  margin: 0 auto 0 auto;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fffef9;
+  font-family: "Kiwi Maru", "ZEN Maru Gothic", "Kosugi Maru", sans-serif;
+  /* header内部コンテンツの上下にpaddingで余白をつける */
+  padding: 10px 0;
+}
+
+/* 
+header-inrで内部コンテンツを囲む */
+.header .header__inr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(1200px, 95%);
+  margin: 0 auto;
+}
+.header .header__logo {
+}
+.header .header__image {
+  display: block;
+  width: min(75px, 10vw);
+}
+.header .header__item a {
+  font-size: min(14px, 1.4vw);
+}
+/* 
+header-inrで内部コンテンツを囲む END */
+
+/* ヘッダーメニューレイアウト */
+.nav-pc {
+  font-size: 18px;
+}
+
+.nav-pc ul {
+  display: flex;
+  padding-left: 0;
+}
+
+.nav-pc li {
+  list-style: none;
+}
+
+.nav-pc a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: black;
+}
+
+.nav-pc a:hover {
+  text-decoration: underline;
+}
+
+/* トップページ */
+.topmain {
+  position: relative;
+  height: 400px;
+}
+
+.top-message {
+  position: absolute;
+  top: 180px;
+  left: 100px;
+  font-family: "Kiwi Maru", "ZEN Maru Gothic", "Kosugi Maru", sans-serif;
+}
+
+.top-message p {
+  font-size: 30px;
+}
+
+.top-message h1 {
+  font-size: 50px;
+}
+
+/* こだわり */
+.commitment-title {
+  margin: 230px 0 0 20px;
+  font-size: 40px;
+  font-family: "Kiwi Maru", "ZEN Maru Gothic", "Kosugi Maru", sans-serif;
+}
+
+.layout {
+  position: relative;
+}
+
+.commitment-message {
+  text-align: center;
+  font-size: 18px;
+  padding: 100px 0 50px;
+}
+.commitment-message {
+  line-height: 2;
+}
+
+.point {
+  text-align: center;
+}
+
+.commitment-point {
+  width: 80%;
+  margin-top: 40px;
+}
+
+.more-button {
+  width: 30%;
+  margin-top: 30px;
+}
+
+/* 
+こだわり・料理写真 */
+.commitment__images {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.commitment__item {
+  position: absolute;
+  display: block;
+}
+.commitment__item.ma-bo {
+  width: 150px;
+  right: 275px;
+}
+.commitment__item.pasta {
+  width: 150px;
+  right: 0;
+  top: 250px;
+}
+.commitment__item.aqua {
+  width: 250px;
+  top: 250px;
+}
+/* 
+  こだわり・料理写真 END */
+
+/* メニュー */
+.menu-title {
+  margin: 100px 0 0 20px;
+  font-size: 40px;
+  font-family: "Kiwi Maru", "ZEN Maru Gothic", "Kosugi Maru", sans-serif;
+}
+.menu-text > p {
+  font-size: 18px;
+  text-align: right;
+}
+
+.menu-content {
+  text-align: center;
+}
+
+.menu-point {
+  width: 80%;
+  margin-top: 30px;
+}
+
+.menu-content > p {
+  font-size: 23px;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+/* 利用方法 */
+.howto-title {
+  margin: 100px 0 0 20px;
+  font-size: 40px;
+  font-family: "Kiwi Maru", "ZEN Maru Gothic", "Kosugi Maru", sans-serif;
+}
+
+.howto-use {
+  width: 10%;
+  margin-top: 20px;
+}
+
+/* お客様の声 */
+h2 {
+  margin: 80px 0 0 20px;
+  font-size: 40px;
+  font-family: "Kiwi Maru", "ZEN Maru Gothic", "Kosugi Maru", sans-serif;
+}
+
+.woman {
+  width: 40%;
+  margin: 50px 0 0 100px;
+}
+
+.man {
+  width: 40%;
+  margin: 100px 80px -150px 0;
+}
+
+.student {
+  width: 40%;
+  margin: 100px 0 0 100px;
+}
+
+.voice > p {
+  font-size: 20px;
+  text-align: right;
+}
+
+/* 注文誘導 */
+.order {
+  position: relative;
+}
+
+.order-image {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.order-message {
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  /* 追加CSS */
+  width: 70%;
+  line-height: 2;
+  margin: auto;
+  right: 0;
+  left: 0;
+  /* 追加CSS END */
+}
+
+.order-button {
+  width: 100%;
+}
+/* 追加CSS */
+.order-button__image {
+  display: block;
+  width: 100%;
+}
+/* 追加CSS END */
+.order-text {
+  font-size: 25px;
+}
+
+/* フッター */
+.footer {
+  position: relative;
+  /* color: #fffef9; */
+  /* 追加CSS */
+  background-color: #fffef9;
+  /* 追加CSS END */
+}
+
+.footer-logo {
+  width: 30%;
+  margin: 40px 0 0 80px;
+}
+
+.footer-text {
+  position: absolute;
+  top: 40%;
+  right: 80px;
+  /* 追加CSS */
+  text-align: center;
+  /* 追加CSS END */
+}
+/* 追加CSS */
+.footer-textlink {
+  color: #000;
+  font-size: 20px;
+  margin-top: 20px;
+  display: block;
+  /* 追加CSS END */
+}
+
+.footer-link {
+  font-size: 20px;
+  margin-top: 10px;
+  /* 追加CSS */
+  margin-top: 20px;
+  /* 追加CSS END */
+}
+
+.footer-link > a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  /* 追加CSS */
+  margin: 0 20px;
+  /* 追加CSS END */
+}
+
+.footer-link > a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: right;
+}
